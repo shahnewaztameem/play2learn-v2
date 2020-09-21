@@ -1,0 +1,371 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+.v-mid {
+  vertical-align: middle;
+}
+body {
+  font-family: 'Raleway', sans-serif;
+}
+
+.hero--title {
+  text-align: center;
+  height: 84.5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero--title h1 {
+  letter-spacing: -0.25rem;
+  color: #fff;
+  font-size: 6rem;
+  font-weight: 500;
+}
+.navbar {
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar .icon {
+  fill: #e67e22;
+}
+.logo {
+  display: inline-block;
+  padding: 0.5rem;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+.logo img {
+  width: 200px;
+}
+a {
+  color: #e67e22;
+}
+.menu {
+  margin: 0;
+  display: flex;
+  list-style: none;
+}
+.menu a {
+  position: relative;
+  z-index: 2;
+  display: block;
+  letter-spacing: 0.01rem;
+  padding: 1rem 1rem;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.25rem;
+  transition: 0.2s;
+}
+.menu a:hover {
+  background: #e67e22;
+  color: #fff;
+}
+.menu a:hover .icon {
+  fill: #fff;
+}
+.dropdown:hover .dropdown-content {
+  opacity: 1;
+  transform: translateY(0);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+.dropdown-content {
+  opacity: 0;
+  transition: transform 0.3s cubic-bezier(0.88, -0.72, 0, 1),
+    opacity 0.3s ease-in-out;
+  transform: translateY(-4rem);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  z-index: 1;
+  background: rgba(225, 255, 225, 0.9);
+}
+.dropdown-content a {
+  font-weight: 300;
+  font-size: 1.2rem;
+}
+
+/* login styles */
+.login-page {
+  padding-top: 30vh;
+}
+.form {
+  position: relative;
+  z-index: 1;
+  background: #ffffff;
+  max-width: 360px;
+  margin: 0 auto 100px;
+  padding: 45px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+.form input {
+  font-family: 'Roboto', sans-serif;
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+.form button {
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: #e67e22;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #ffffff;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+.form button:hover,
+.form button:active,
+.form button:focus {
+  background: #e67e22;
+}
+.form .message {
+  margin: 15px 0 0;
+  color: #b3b3b3;
+  font-size: 12px;
+}
+.form .message a {
+  color: #e67e22;
+  text-decoration: none;
+}
+.form .register-form {
+  display: none;
+}
+.container {
+  position: relative;
+  z-index: 1;
+  max-width: 300px;
+  margin: 0 auto;
+}
+.container:before,
+.container:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.container .info {
+  margin: 50px auto;
+  text-align: center;
+}
+.container .info h1 {
+  margin: 0 0 15px;
+  padding: 0;
+  font-size: 36px;
+  font-weight: 300;
+  color: #1a1a1a;
+}
+.container .info span {
+  color: #4d4d4d;
+  font-size: 12px;
+}
+.container .info span a {
+  color: #000000;
+  text-decoration: none;
+}
+.container .info span .fa {
+  color: #ef3b3a;
+}
+
+.login-text,
+.register-text {
+  padding-bottom: 35px;
+}
+
+/* testimonial  */
+
+.callout-text {
+  text-align: center;
+  max-width: 1140px;
+  margin: 20px auto;
+  padding-top: 20vh;
+}
+.testimonial-carousel {
+  overflow: hidden;
+  height: 250px;
+  position: relative;
+  padding: 20px 0px;
+  display: flex;
+}
+.testimonial-carousel .icon-container {
+  position: relative;
+  padding: 0 5px;
+  max-width: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+@media (min-width: 768px) {
+  .testimonial-carousel .icon-container {
+    max-width: 50px;
+    padding: 0 10px;
+  }
+}
+.testimonial-carousel .icon-container span.lnr {
+  color: #dadada;
+  font-size: 1.6em;
+  cursor: pointer;
+  transition: color 0.3s linear;
+}
+@media (min-width: 768px) {
+  .testimonial-carousel .icon-container span.lnr {
+    font-size: 2.6em;
+  }
+}
+.testimonial-carousel .icon-container span.lnr:hover {
+  color: #e67e22;
+}
+.testimonial-carousel p {
+  font-family: 'Raleway', cursive;
+  font-size: 1em;
+}
+@media (min-width: 768px) {
+  .testimonial-carousel p {
+    font-size: 1.4em;
+  }
+}
+.testimonial-items {
+  position: relative;
+  flex: 1;
+  overflow: hidden;
+  color: #e67e22;
+}
+.testimonial-item {
+  width: 100%;
+  transition: transform 1s;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.testimonial-item p.testimonial-author {
+  font-weight: bold;
+  text-align: right;
+}
+.testimonial-item.first {
+  left: 0;
+}
+.testimonial-item.second {
+  left: 100%;
+}
+.testimonial-item.third {
+  left: 200%;
+}
+
+.testimonial-quote {
+  font-style: italic;
+  text-align: left;
+  padding-bottom: 20px;
+}
+
+blockquote {
+  margin: 50px auto;
+  font-style: italic;
+  color: #555555;
+  padding: 1.2em 30px 1.2em 75px;
+  border-left: 8px solid #e67e22;
+  position: relative;
+}
+
+blockquote::before {
+  font-family: Arial;
+  content: '\201C';
+  color: #e67e22;
+  font-size: 4em;
+  position: absolute;
+  left: 10px;
+  top: -10px;
+}
+
+blockquote::after {
+  content: '';
+}
+
+blockquote span {
+  display: block;
+  color: #333333;
+  font-style: normal;
+  font-weight: bold;
+  margin-top: 1em;
+}
+
+/* game desc box */
+.box {
+  font-size: 20px;
+  color: black;
+  padding: 5px;
+  text-align: left;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  box-sizing: border-box;
+  width: 450px;
+}
+.box-container {
+  display: flex;
+  height: 80vh;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.button {
+  background-color: #e67e22;
+  color: white;
+  padding: 10px 32px;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 10%;
+  transition: 0.3s ease-in-out;
+}
+
+.button:hover {
+  background-color: black;
+  color: #fff;
+}
+
+h2 {
+  font-size: 180%;
+  word-spacing: 2px;
+  padding-bottom: 15px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h2:after {
+  display: block;
+  height: 2px;
+  background-color: orange;
+  content: '';
+  width: 100px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+a.play {
+  color: #fff;
+  text-decoration: none;
+}

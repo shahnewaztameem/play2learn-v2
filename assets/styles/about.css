@@ -1,0 +1,28 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+#about {
+  width: 70%;
+  margin: 0 auto;
+  padding: 5%;
+}
+
+.about-wrapper h1 {
+  padding-bottom: 50px;
+  line-height: 32px;
+  font-size: 3rem;
+}
+
+.about-wrapper h1::after {
+  content: "";
+  border-bottom-style: solid;
+  border-bottom-width:5px;
+  display:table-cell;
+  width:200px;
+  padding-top: 20px;
+  color: #e67e22;
+}
