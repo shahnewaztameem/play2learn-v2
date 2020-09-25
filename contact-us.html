@@ -9,8 +9,9 @@
     integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/styles/index.css">
-  <link rel="stylesheet" href="assets/styles/about.css">
+  <link rel="stylesheet" href="assets/styles/contact.css">
 </head>
+
 <body>
   <header class="banner" role="banner">
     <nav class="navbar" role="navigation" aria-label="menu">
@@ -38,5 +39,27 @@
       </ul>
     </nav>
   </header>
+  <div class="container">
+    <form id="contact" action="https://www.webucator.com/course-demos/htm101/process-form.cfm" method="post">
+      <h3>Contact us</h3>
+      <fieldset>
+        <input placeholder="Your name" name="name" type="text" tabindex="1" required autofocus>
+      </fieldset>
+      <fieldset>
+        <input placeholder="Your Email Address" name="email" type="email" tabindex="2" required>
+      </fieldset>
+      <fieldset>
+        <input placeholder="Your Phone Number (optional)" name="tel" type="tel" tabindex="3">
+      </fieldset>
+      <fieldset>
+        <textarea placeholder="Type your message here...." tabindex="5" name="message" required></textarea>
+      </fieldset>
+      <fieldset>
+        <button name="submit" type="submit" name="contact-submit" id="contact-submit" data-submit="...Sending">Submit</button>
+      </fieldset>
+    </form>
+  </div>
+
 </body>
+
 </html>

@@ -9,14 +9,15 @@
     integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../assets/styles/index.css">
-  <link rel="stylesheet" href="../assets/styles/about.css">
+  <link rel="stylesheet" href="../assets/styles/anagram.css">
 </head>
+
 <body>
   <header class="banner" role="banner">
     <nav class="navbar" role="navigation" aria-label="menu">
       <a class="logo" href="#"><img src="../assets/img/logo/logo.png" alt=""></a>
       <ul class="menu">
-        <li><a href="index.html">Home</a></li>
+        <li><a href="../index.html">Home</a></li>
         <li><a href="../about.html">About us</a></li>
         <li class="dropdown">
           <a class="v-mid" href="#">
@@ -38,5 +39,41 @@
       </ul>
     </nav>
   </header>
+
+  <div class="container">
+    <h1 class="title">Anagram Hunt</h1>
+    <div class="anagram-wrapper" id="anagram-description">
+      <div class="counter-box">
+        <h4>Number of letters</h4>
+        <select name="counter" id="word-lenght">
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+        </select>
+        <button class="button" id="start-game">Go</button>
+        <i class="fas fa-question-circle"
+          title="An anagram is a word made by rearranging the letters of another word"></i>
+      </div>
+
+      <div class="rules">
+        <ol>
+          <li>Select the word length</li>
+          <li>Press <strong>Go</strong>. A word will appear along with the number of anagram it has</li>
+          <li>Enter all the anagrams for the word that you can think of. Hurry. You only have 30 seconds</li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="game-box" id="game-box">
+      <h1 id="random-word"> &mdash; </h1>
+      <textarea name="" id="" cols="40" rows="10" placeholder="Enter one anagram per line" id="game-input"></textarea>
+      <div id="timer"><strong>Time left</strong> 30 seconds</div>
+    </div>
+  </div>
+
+  <script src="../assets/scripts/anagram.js"></script>
 </body>
+
 </html>

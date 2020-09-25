@@ -2,7 +2,13 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  outline: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
 .v-mid {
   vertical-align: middle;
@@ -94,7 +100,7 @@ a {
 
 /* login styles */
 .login-page {
-  padding-top: 30vh;
+  padding-top: 20vh;
 }
 .form {
   position: relative;
